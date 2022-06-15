@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <script src="https://kit.fontawesome.com/4280425d75.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #main {
+            width: 80%;
+            border: 1px solid red;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .avtar>img {
+            width: 100%;
+            display: block;
+        }
+
+        .avtar {
+            border: 1px solid gold;
+            width: 50%;
+            height: 40%;
+            overflow: hidden;
+            position: relative;
+            box-sizing: inherit;
+            margin-right: 60px;
+        }
+
+        .detals>h1,
+        .detals>h2 {
+            font-weight: 500;
+            margin: 30px 0px;
+        }
+
+        .detals>p {
+
+            width: 95%;
+            color: gray;
+            line-height: 30px;
+            margin: 20px 0px;
+        }
+
+        .detals>p+p {
+            color: black;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        .month {
+            margin: 20px 0px;
+        }
+
+        .month>button {
+            padding: 7px 15px;
+            font-size: 15px;
+            border: transparent;
+        }
+
+        .qun {
+            border: 1px solid rgb(126, 126, 126);
+            display: flex;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .qun>button {
+            padding: 10px 20px;
+            font-size: 30px;
+            border: transparent;
+            background-color: transparent;
+        }
+
+        .qun>input {
+            text-align: center;
+            width: 80px;
+            font-size: 20px;
+            border: transparent;
+
+        }
+
+        .add>button {
+            padding: 10px 15vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="avtar">
+            <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-2---Skincare-3.gif?v=1655088937"
+                alt="">
+        </div>
+        <div class="detals">
+            <a href="">Home</a>
+            <h1>The Make It Reign June Fab Bag</h1>
+            <h2>Rs</h2>
+            <p>It's raining beauty! Make a splash with 5 cult-favourite makeup & skincare essentials in the Make It
+                Reign...</p>
+            <p>Plans</p>
+            <div class="month">
+                <button>1 Month</button>
+                <button>3 Month</button>
+            </div>
+            <div class="qun">
+                <button>+</button>
+                <input type="text">
+                <button>-</button>
+            </div>
+            <!-- <div class="add">
+                <button>add to cart</button>
+            </div> -->
+
+            <div class="sosyal">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    let main = document.querySelector(".avtar")
+    let imgset = document.querySelector(".avtar>img")
+
+
+    main.addEventListener("mousemove", function (e) {
+        let x = e.clientX - e.target.offsetLeft;
+        let y = e.clientY - e.target.offsetTop;
+
+        imgset.style.transformOrigin = `${x}px ${y}px`;
+        imgset.style.transform = "scale(2)"
+    })
+    main.addEventListener("mouseleave", function () {
+        imgset.style.transformOrigin = "center";
+        imgset.style.transform = "scale(1)"
+    })
+</script>
