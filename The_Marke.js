@@ -75,7 +75,11 @@ function chak(name) {
 document.querySelector(".add").addEventListener("click", submitObj);
 function submitObj() {
   event.preventDefault();
+  let avtar = document.querySelector(".avtar>img").src;
+  let name = document.querySelector("#ap_product_name").innerText;
   let obj = {
+    ime: avtar,
+    name: name,
     price: localStorage.getItem("price"),
     qun: localStorage.getItem("quntity"),
   };
