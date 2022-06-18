@@ -26,16 +26,16 @@ function hello(event){
     }
    
     else{
-      let h4=document.querySelector('h4');
-      h4.innerHTML=""
-      let p= document.querySelector('#s');
-      p.innerHTML="";
-      let div = document.querySelector('#dis');
-      div.innerHTML=""
-      p.innerText="We've sent you an email with a link to update your password."
-      p.style.border="1px solid gray"
-      p.style.padding="10px"
-      console.log(pd)
+        let div = document.querySelector('#dis');
+        div.innerHTML=""
+        let h4=document.querySelector('h4');
+        h4.innerHTML=""
+        let p= document.querySelector('#s');
+        p.innerHTML="";
+        p.innerText="We've sent you an email with a link to update your password."
+        p.style.border="1px solid gray"
+        p.style.padding="10px"
+        console.log(pd)
   }
 }   
 }
