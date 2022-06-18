@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password Page</title>
+    <script src="https://kit.fontawesome.com/ce38e0eef3.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#gautam{
+    margin: auto;
+    width: 25%;
+    margin-top: 150px;
+}
+#gautam>.sonk>p{
+   text-align: center;
+   font-size: 40px;
+   font-family: poppins;
+   color: #161616;
+}
+/* ***********************social ********************* */
+#gautam>.sonks{
+    width: 100%;
+    margin: auto;
+}
+#gautam>.sonks>a{
+    display: flex;
+    height: 40px;
+    border-radius: 4px;
+    border-color: #2d5073;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'merwheather Sans', sans-serif;
+    background-color: #3d5998;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+    
+}#gautam>.sonks>a>i{
+    font-size: 27px;
+    background-color:rgba(255, 255, 255, 0.1);
+    border: 1px solid transparent;
+    padding:5px 15px;
+}
+#gautam>.sonks>a>span{
+    font-size: 18px;
+    margin-left: 15px;
+}
+#gautam>.sonks:nth-child(3)>a{
+    background-color:#dd4b39 ;
+}
+#gautam>.sonks:nth-child(3)>a>i{
+    padding: 10px;
+}
+/* ********************************** */
+h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: poppins;
+   color: #333;
+   font-size:700;
+}
+p{
+    
+   color: #252525;
+   font-size: 17px;
+}
+#dis{
+    margin: 10px 0px;
+    line-height: 22px;
+    font-size: 14px;
+}
+#dis>p{
+    margin-bottom: 20px;
+}
+#shiv{
+    color: #7D7D7D;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: poppins;
+
+}
+/* **************************input ************************** */
+#krish{
+    height: 40px;
+    width: 98%;
+    border:0.1px solid lightgray;
+    padding-left: 10px;
+}
+::placeholder{
+    font-size: 16px;
+}
+#krish:focus{
+    outline-color:  #e5b95f;
+}
+/* *********************button*********************** */
+button{
+    width: 102%;
+    background-color: #e5b95f;
+    color: #FFFFFF;
+    height: 40px;
+    font-size: 1.1em;
+    border: none;
+ }
+ button:hover{
+    color: black;
+    border: none;
+    cursor: pointer;
+ }
+#pr{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+    </style>
+</head>
+<body>
+    <div id="gautam">
+        <div class="sonk"><p>Sign In</p></div>
+        <div class="sonks">
+            <a href="https://www.facebook.com/">
+                <span>Sign in with Facebook</span>
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            
+        </div>
+        <div class="sonks">
+            <a href="https://www.google.com/gmail/">
+                <span>Sign in with Google</span>
+                <i class="fa-brands fa-google"></i>
+            </a>
+        </div>
+        <h4>RESET YOUR PASSWORD</h4>
+        <p id="s">We will send you an email to reset your password.</p>
+        <div id="dis"></div>
+        <p id="shiv">Email</p>
+        <input id="krish" type="email" name="email" placeholder="your-email@shopify.com" >
+        <p id="pr">Cancel or</p>
+        <button onclick="hello()"> SUBMIT </button>
+    </div>
+</body>
+</html>
+<script src="forgotpass.js"></script>
