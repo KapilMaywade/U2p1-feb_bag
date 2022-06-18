@@ -6,6 +6,7 @@
     box-shadow:black(0, 0, 0, 0.35) 0px 5px 15px;
     justify-content: space-between;
     margin-bottom: 20px;
+    position:sticky;
 
 }
 #first{
@@ -38,16 +39,38 @@
     width: 50%;
 }
 
-#display{
+.display{
    margin-top: 0px;
    width: 100%;
    height: 520px;
+   position: relative;
 }
-#display>img{
+.display>img{
     width: 100%;
-   height: 100%;
-
+    height: 100%;
 }
+.display>button
+{
+   position: absolute; 
+   top: 40%;
+   background-color: white;
+   font-size: 30px;
+   width: 50px;
+   height: 50px;
+   border: transparent;
+   
+}
+.display>:nth-child(2){
+    left: 0%;
+}
+.display>:nth-child(3){
+    right: 0%;
+}
+.display>button:hover {
+    background-color: #a7906b;
+    color: white;
+}
+
 .heading{
    text-align: center;
    margin: 80px 0px 25px 0px;
@@ -79,6 +102,10 @@
     height: 100%;
     border-radius: 20px;
 }
+#boxas>:hover{
+    background: #000;
+}
+  
 #plan{
   width: 55%;
   height: 500px;
