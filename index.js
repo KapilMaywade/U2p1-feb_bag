@@ -1,4 +1,4 @@
-let img =document.querySelector(".display>img");
+let img =document.querySelector(".display>a>img");
 
 let buttons=document.querySelectorAll(".display>button");
 let imgNum=0;
