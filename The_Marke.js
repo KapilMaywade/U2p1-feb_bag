@@ -33,7 +33,7 @@ function three_month(event) {
   event.preventDefault();
   let butn2 = document.querySelector(".month>button+button");
   butn2.style.backgroundColor = "#E1E1E1";
-  document.querySelector(".append").innerText = "1,599.00";
+  document.querySelector(".append").innerText = "1599.00";
   let price = document.querySelector(".append").innerText;
   localStorage.setItem("price", price);
 }
@@ -72,9 +72,13 @@ function chak(name) {
 }
 
 // ******************************************   add to cart *********************************
-document.querySelector(".add").addEventListener("click", submitObj);
-function submitObj() {
-  event.preventDefault();
+
+document.querySelector(".add").addEventListener("click", function () {
+  let arr = [];
+  submitObj(arr);
+  window.location.reload();
+});
+function submitObj(arr) {
   let avtar = document.querySelector(".avtar>img").src;
   let name = document.querySelector("#ap_product_name").innerText;
   let obj = {
@@ -83,8 +87,8 @@ function submitObj() {
     price: localStorage.getItem("price"),
     qun: localStorage.getItem("quntity"),
   };
-
-  localStorage.setItem("add_to_cart", JSON.stringify(obj));
+  arr.push(obj);
+  localStorage.setItem("add_to_cart", JSON.stringify(arr));
 }
 
 // *************************************      table     **********************************
