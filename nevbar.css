@@ -34,7 +34,7 @@
     width: 210px;
 }
 
-#logo>img {
+#logo>a>img {
     height: 82%;
     width: 100%;
     margin-top: 10px;
