@@ -8,11 +8,85 @@
     <title>Product</title>
     <script src="https://kit.fontawesome.com/4280425d75.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="The_Make.css">
+    <link rel="stylesheet" href="nevbar.css">
 
 </head>
 
 <body>
-    <div id="main">
+    <!-- **************************************** Navbar *************************************  -->
+    <div id="Navbar" style="margin-top:-100px ;">
+        <div id="first">
+            <p>SUBSCRIBE NOW</p>
+        </div>
+        <div id="logo">
+            <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO_96ac9306-4c81-4ab8-8d2b-4e818eed7f76_2048x.png?v=1606482289"
+                alt="Fab bag">
+        </div>
+        <div id="tools">
+            <div>
+                <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            </div>
+            <div>
+                <i class="fa-solid fa-heart"></i>
+
+            </div>
+            <div class="dropdown">
+                <i class="fa-solid fa-circle-user"></i>
+                <div class="dropdown_menu">
+                    <a href="#">Lamguages: En</a>
+                    <a href="#">Checkout</a>
+                    <a href="#">Sign In</a>
+                    <a href="#">Create an Account</a>
+                </div>
+            </div>
+
+            <div>
+                <p class="su_qun">0</p>
+                <i class="fa-solid fa-cart-shopping" id="cart_opan"></i>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- ***********************cart*************** -->
+    <div class="su_add_to_cart">
+        <div class="su_add_to_cart_tital">
+            <p>My Cart</p>
+            <i class="fa-solid fa-x" id="idont"></i>
+        </div>
+        <div class="su_product_display">
+            <div class="ap_img_name">
+
+            </div>
+        </div>
+        <div class="su_total_in">
+            <h2>Total:</h2>
+            <div>
+                <h2>Rs:</h2>
+                <h2 id="total_price_in_nev">0</h2>
+            </div>
+        </div>
+        <button>view cart</button>
+        <button>checkout</button>
+
+    </div>
+
+    <!--**************** search bar ***************** -->
+
+
+    <div class="search_pr">
+        <i class="fa-solid fa-x" id="idont_closs"></i>
+        <p>WHAT ARE YOU LOOKING FOR?</p>
+        <input type="search" id="ap_search_of" placeholder="Search product">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+
+    <!-- ****************************** My Work ****************************************** -->
+
+
+    <div id="main_the">
         <div class="avtar">
             <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/products/Women_sPage-2---Skincare-3.gif?v=1655088937"
                 alt="">
@@ -26,7 +100,8 @@
                 <h2 class="append">599.00</h2>
             </div>
 
-            <p>It's raining beauty! Make a splash with 5 cult-favourite makeup & skincare essentials in the Make It
+            <p>It's raining beauty! Make a splash with 5 cult-favourite makeup & skincare essentials in the Make
+                It
                 Reign...</p>
             <p>Plans</p>
             <div class="month">
@@ -63,7 +138,9 @@
         <div class="ap_tbody">
             <!-- discription -->
             <div class="td_cont active">
-                <p>It's raining beauty! Make a splash with 5 cult-favourite makeup & skincare essentials in the Make It
+                <p>It's raining beauty! Make a splash with 5 cult-favourite makeup & skincare essentials in the
+                    Make
+                    It
                     Reign June Fab Bag.</p>
                 <p>Here's what you can expect inside your June Fab Bag:</p>
 
@@ -77,10 +154,15 @@
                 </ul>
 
 
-                <p>*Two offers cannot be clubbed. Makeup choice will be available on the order confirmation page, on a
-                    first-come, first-served basis. 2nd product is subject to stock availability. Bonus skincare will be
+                <p>*Two offers cannot be clubbed. Makeup choice will be available on the order confirmation
+                    page, on
+                    a
+                    first-come, first-served basis. 2nd product is subject to stock availability. Bonus skincare
+                    will be
                     customized by the Fab Bag Crew.</p>
-                <p>FAB BAG delivers the best of beauty and makeup products once a month, customized just for you.</p>
+                <p>FAB BAG delivers the best of beauty and makeup products once a month, customized just for
+                    you.
+                </p>
             </div>
 
             <!-- view plans -->
@@ -132,10 +214,14 @@
             <!-- return policy -->
             <div class="td_cont">
                 <ul>
-                    <li>Returns Policy for FAB BAG Monthly Subscriptions: 100% Happiness or Money-Back Guarantee</li>
+                    <li>Returns Policy for FAB BAG Monthly Subscriptions: 100% Happiness or Money-Back Guarantee
+                    </li>
                     <li>For more details, please see our Policy </li>
-                    <li>Should you have any questions regarding this product, please feel free to get in touch with our
-                        friendly Customer Experience Team at crew@fabbag.com within 48 hours of receiving the shipment
+                    <li>Should you have any questions regarding this product, please feel free to get in touch
+                        with
+                        our
+                        friendly Customer Experience Team at crew@fabbag.com within 48 hours of receiving the
+                        shipment
                         or call us at 022-4896-7878 Mon - Fri, 9am - 7pm.
                     </li>
                 </ul>
@@ -174,3 +260,4 @@
 
 </html>
 <script src="The_Marke.js"></script>
+<script src="nevbar.js"></script>
